@@ -9,6 +9,7 @@ public:
         int bad = -1;
         while(low<=high){
             mid = low + (high-low)/2;
+            //high = high-low;
             if(isBadVersion(mid)){
                 bad = mid;
                 high = mid-1;
